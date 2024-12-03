@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+  position: relative; 
+  overflow: hidden; 
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./Assets/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); 
+  z-index: -1; 
+}
+
+header h1,
+header p {
+  position: relative; 
+  color: white; 
+  z-index: 1; 
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  font-size: 0.9em;
+}
+
+.boss-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.boss-card img {
+  width: 120px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.boss-card div {
+  display: flex;
+  flex-direction: column; 
+}
+
+.boss-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.boss-card p {
+  margin: 5px 0 0;
+}
