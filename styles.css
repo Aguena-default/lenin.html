@@ -3,6 +3,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: black;
+  color:white;
 }
 
 header {
@@ -10,6 +12,7 @@ header {
   padding: 100px 20px;
   position: relative; 
   overflow: hidden; 
+  font-size: 1.4em;   
 }
 
 header::before {
@@ -37,11 +40,19 @@ main {
   padding: 20px;
 }
 
+main h2{
+  font-size: 1.8em;
+  border-style: solid;
+  border-color:#670d66; 
+  border-width: 2px;
+  border-radius: 14px;
+}
+
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #f4f4f4;
-  font-size: 0.9em;
+  font-size: 1.0em;
+  background-color: #670d66;
 }
 
 .boss-card {
@@ -63,6 +74,7 @@ footer {
 }
 
 .boss-card h3 {
+  color: #f8c670;
   margin: 0;
   font-size: 1.2em;
 }
@@ -71,7 +83,47 @@ footer {
   margin: 5px 0 0;
 }
 
-.outros{
-  text-align: left;
+.others{
+  text-align: left; 
 
+}
+
+a:link {
+  color: #b49d80;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f8c670;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#music {
+  padding: 20px;
+  text-align: center;
+}
+
+.videoplayer {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#videoPlayer {
+  width: 80%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#oscilloscope {
+  width: 80%;
+  height: 100px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
 }
